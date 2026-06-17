@@ -50,7 +50,7 @@ function App() {
   // The filterBySearch function takes a search string as an argument and filters the allCountries array to find countries whose names include the search string (case-insensitive). The filtered results are then stored in the filterCountries state variable using the setFilterCountries function.
   const filterBySearch = (search:string):void => {
     const searchedCountry = allCountries.filter((country) => {
-       return country.name.toLowerCase().includes(search);
+       return country.name.toLowerCase().includes(search.toLocaleLowerCase());
     });
     setFilterCountries(searchedCountry);
   };
