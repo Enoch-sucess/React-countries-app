@@ -38,7 +38,7 @@ export interface Country {
   currencies: Currency[];
   languages: Language[];
   // flag:string;
-  flags: Flag;
+  flags: flags;
 }
 
 function App() {
